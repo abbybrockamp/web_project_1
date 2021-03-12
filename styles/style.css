@@ -1,36 +1,32 @@
+/* ---General styling and perameters___ */
 .page {
   min-width: 1100px;
-  /* we don't know how to make mobile versions of websites yet, */
-  /* so here we've set a minimum page width */
   max-width: 1600px;
-  /* here we've set a maximum page width */
   margin: 0 auto;
-  /* this ensures that all content is centered on screens wider than 1600px */
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
 /* ---Header Section--- */
+.logo_place_header {
+  position: absolute;
+  top: 30px;
+  left: 64px;
+  width: 154px;
+  height: 31px;
+  z-index: 1;
+}
 .header {
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
   position: relative;
   display: flex;
-}
-
-.logo_place_header {
-  position: absolute;
-  top: 30px;
-  left: 64px;
-  min-width: 154px;
-  max-height: 31px;
-  z-index: 1;
+  background-color: #f2f2f2;
 }
 
 .header__title {
   max-width: 730px;
   align-self: center;
-  margin-right: 64px;
   position: absolute;
   left: 64px;
   z-index: 2;
@@ -40,10 +36,10 @@
 }
 
 .header__subtitle {
+  width: 388px;
   position: absolute;
   left: 64px;
   bottom: 30px;
-  width: 388px;
   z-index: 2;
   line-height: 25px;
   font-size: 18px;
@@ -61,11 +57,10 @@
 
 .header__main-illustration {
   position: absolute;
-  align-self: flex-end;
   width: 765px;
-  height: 608;
+  height: 608px;
   bottom: 0;
-  right: 0;
+  right: 0px;
   z-index: 1;
 }
 
@@ -86,10 +81,10 @@
 }
 
 .two-columns {
-display: flex;
-justify-content: space-between;
-width: 80%;
-margin: 100px 0 0;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 100px 0;
 }
 
 .two-columns__brief {
@@ -121,8 +116,6 @@ margin: 100px 0 0;
 }
 
 .two-columns__span-accent {
-  line-height: 34px;
-  font-size: 24px;
   font-weight: bold;
 }
 
@@ -130,22 +123,20 @@ margin: 100px 0 0;
 /* ---Digits Section--- */
 .digits {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  margin: 100px 0 80px;
+  padding: 0 0 100px;
 } 
 
 .section-title {
   margin: 0 auto;
-  text-align: center;
   width: 60%;
   line-height: 1.115em;
   font-size: 60px;
   font-weight: bold;
+  text-align: center;
 }
 
 .section-subtitle {
-  margin: 20px auto;
+  margin: 20px auto 0;
   text-align: center;
   width: 60%;
   line-height: 34px;
@@ -156,23 +147,29 @@ margin: 100px 0 0;
 .table {
   width: 1100px;
   margin: 0 auto;
-  vertical-align: top;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
 }
 
+.table__cell {
+  list-style: none;
+  margin-top: 60px;   
+}
 
 .table__heading {
   line-height: 1.15em;
   font-size: 24px;
   font-weight: bold;
-  text-align: left;
-  padding: 60px 0 20px;
+  padding-bottom: 20px;
 }
 
 .table__text {
-  width: 250px;
+  max-width: 250px;
   font-size: 18px;
   font-weight: normal;
-  padding: 0 0 20px;
+  padding-bottom: 20px;
 }
 
 /* ---Feynman section--- */
@@ -208,6 +205,7 @@ margin: 100px 0 0;
 .feynman__link {
   position: absolute;
   right: 48px;
+  top: 50%;
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
@@ -227,6 +225,7 @@ margin: 100px 0 0;
   flex-direction: column;
   overflow: hidden;
   background-color: #1f1f1f;
+  padding: 0 0 90px;
 }
 
 .section-title_theme_dark {
@@ -240,7 +239,6 @@ margin: 100px 0 0;
   padding-top: 90px;
 }
 
-
 .section-subtitle_theme_dark {
   line-height: 34px;
   font-size: 24px;
@@ -248,29 +246,32 @@ margin: 100px 0 0;
   text-align: center;
   color: white;
   margin: 20px auto 0;
-  width: 60%;
 }
 
 .table_theme_dark {
-  position: relative;
   z-index: 1;
-  margin: 80px auto 10px;
+  margin: 0 auto;  
+  width: 70%;
 }
 
 .table__cell_theme_dark {
-  color: white;
-  text-align: left;
-  vertical-align: top;
+  margin-top: 80px;
+  width: 200px;
 }
 
 .table__heading_theme_dark {
-  width: 200px;
+  color: white;
   padding-bottom: 20px;
+  line-height: 1.15em;
+  font-size: 24px;
+  font-weight: bold;
 }
 
 .table__text_theme_dark {
-  width: 200px;
-  padding: 0 0 80px;
+  color: white;
+  line-height: 1.2em;
+  font-size: 18px;
+  font-weight: normal;
 }
 
 
@@ -294,8 +295,8 @@ margin: 100px 0 0;
   margin: 0 auto 0;
   width: 90%;
   display: flex;
-  padding: 60px 0 0;
   justify-content: space-between;
+  padding: 60px 0 0;
 }
 
 .footer__column_content_copyright {
@@ -314,11 +315,11 @@ margin: 100px 0 0;
 }
 
 .footer__author {
+ align-self: flex-end;
  line-height: 25px;
  font-size: 18px;
  font-weight: normal;
  color: white;
- align-self: flex-end;
 }
 
 .footer__column-heading {
@@ -335,7 +336,7 @@ margin: 100px 0 0;
   font-size: 18px;
   font-weight: normal;
   color: white;
-  padding-bottom: 20px;
+  padding-bottom: 16px;
   text-decoration: none;
 }
 
@@ -348,7 +349,8 @@ margin: 100px 0 0;
 }
 
 .logo_place_footer {
-  size: 183px 35px;
+  width: 183px;
+  height: 35px;
   position: absolute;
   left: 5%;
   top: 60px;
