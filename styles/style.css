@@ -51,7 +51,6 @@
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
-  position: relative;
   z-index: 2;
 }
 
@@ -163,8 +162,8 @@
 
 .table__cell {
   list-style: none;
-  margin-top: 60px; 
-  max-width: 250px;   
+  margin-top: 60px;
+  max-width: 250px;
 }
 
 .table__heading {
