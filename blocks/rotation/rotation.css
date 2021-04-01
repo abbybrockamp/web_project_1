@@ -1,0 +1,14 @@
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+      transform-origin: center;
+      } 
+    to {
+      transform: rotate(360deg);
+      transform-origin: center;
+    }
+   }
+   
+   .rotation {
+     animation: rotation 20s linear infinite;
+   }
