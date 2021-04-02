@@ -18,13 +18,13 @@
 
 ## DEPLOYMENT INSTRUCTION
 
-### Disclaimer:
-* This webpage has not yet been made responsive. Please use on a desktop.
-* All browsers should be compatible with this webpage. Chrome is recommended.
-
 1. Download the code from Github
 2. Open into Visual Studio Code or any other text editor of your choosing. However, please be sure that you have a live server extension.
 3. For VSC, open thre files, then use the Server Extension on the bottom right-hand corner by clicking "Go Live". If you do not have this extention this is a link on how to install it [here](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer).
+
+#### Disclaimer:
+* This webpage has not yet been made responsive. Please use on a desktop.
+* All browsers should be compatible with this webpage. Chrome is recommended.
 
 
 ## 3RD PARTY INFO
